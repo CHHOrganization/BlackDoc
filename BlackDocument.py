@@ -133,7 +133,7 @@ Location = " "
 Telegram = "T.me/RekcahHC_"
 Secret = "BDU"
 Password = ""
-
+Secret_Chat = "X7ksLyChat-"
 
 #Membership Numbers Data
 Ms1 = "I"

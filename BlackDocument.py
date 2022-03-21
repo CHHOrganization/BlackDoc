@@ -17,6 +17,7 @@ from Plugins.Configs.Pages.More_Menu_Pages.Org_Rules import *
 from Plugins.Configs.Pages.More_Menu_Pages.About_Us import *
 from Plugins.Configs.Pages.More_Menu_Pages.Members_List import *
 from Plugins.Configs.Pages.More_Menu_Pages.Script_Games import *
+from Plugins.Configs.Pages.More_Menu_Pages.Org_History import *
 
 clearConsole()
 
@@ -146,6 +147,9 @@ while True:
     if len(Nickname) > 1:
         Identity = input(Bright_Cyan +"iD: ")
         if len(Identity) > 0:
+            if Identity != "I" or Identity != "II" or Identity != "IV" or Identity != "V" or Identity != "VI" or Identity != "VIII" or Identity != "IX" or Identity != "XI":
+                print("You not registered")
+                break
             Password = input("Password: ")
             if len(Password) >= 8:    
                 Cpassword = input("Confirm Password: ")
@@ -191,7 +195,7 @@ while True:
 
                             elif Answer == "Memberships":
                                 #Membership Script
-                                Membership()
+                                Memberships()
                                 Logout_System()
                                 break
                             #End Part
@@ -279,6 +283,14 @@ while True:
                                     clearConsole()
                                     NoLoad_Banner()
                                     Script_Games()
+                                    Logout_System()
+                                    break
+                                
+                                elif More_MenuQ == "Org History":
+                                    #Script Games Page
+                                    clearConsole()
+                                    NoLoad_Banner()
+                                    Org_History()
                                     Logout_System()
                                     break
                                 else:

@@ -16,14 +16,15 @@ Date: 24/02/2022\n\
 I). Membership: RekcahHC_I\n\
 II). Membership: RekcahHC_II\n\
 III). Membership: RekcahHC_III (Pending)\n\
-IV). Membership: RekcahHC_IV (Pending)\n\
+IV). Membership: RekcahHC_IV\n\
 V). Membership: RekcahHC_V\n\
 VI). Membership: RekcahHC_VI)\n\
 VII). Membership: RekcahHC_VII (Pending)\n\
-VIII). Membership: RekcahHC_VIII (Pending)\n\
+VIII). Membership: RekcahHC_VIII\n\
 IX). Membership: RekcahHC_IX (Pending)\n\
-X). Membership: RekcahHC_X"
-#End Line Of Members
+X). Membership: RekcahHC_X\n\
+XI). Membership: RekcahHC_XI"
+    #End Line Of Members
     for char in Print_Members:
         sys.stdout.write(char)
         sys.stdout.flush()

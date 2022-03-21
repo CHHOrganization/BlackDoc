@@ -67,21 +67,16 @@ The Org")
     print("")
 
     print(Dark_Cyan)
-    Auto_Text_14 = "Date: 20/02/2022 Updates "
+    Auto_Text_14 = "Date: 21/03/2022 Updates "
     for char in Auto_Text_14: 
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.3)
     print("")
 
-    print(Dark_Magenta + Ms1 + Bright_Red +". Membership: "+ Membership + Ms7) 
-    print("Date: 20/02/2022")
-    print(Dark_Magenta + Ms2 + Bright_Red +". Membership: "+ Membership + Ms8)
-    print("Date: 20/02/2022")
-    print(Dark_Magenta + Ms3 + Bright_Red +". Membership: "+ Membership + Ms9)
-    print("Date: 20/02/2022")
-    print(Dark_Magenta + Ms4 + Bright_Red +". Membership: "+ Membership + Ms10)
-    print(Bright_Green +"Use Menu -> Then Cammand; 'Memberships'  To See More...")
+    print(Dark_Magenta + Ms1 + Bright_Red +". Theres No New Members...") 
+    print(Bright_Green +"Use Menu -> Then Cammand; 'Memberships'\n\
+To See The Full Memberships Borad.")
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
 

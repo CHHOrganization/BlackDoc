@@ -125,7 +125,7 @@ def Membership_Details():
     print("Proton Email: " + Membership + Identity + Bright_Magenta + "@" + Bright_Red + "protonmail.com")
     print("Telegram: "+ Bright_Magenta + "@" + Bright_Red + Telegram + Identity)
     print(BG_Bright_Cyan + Bright_Magenta)
-    Security_info = "-----------Account Secret Codes-----------"
+    Security_info = "-----------Account Secret Codes----------"
     for char in Security_info:
         sys.stdout.write(char)
         sys.stdout.flush()

@@ -1,6 +1,27 @@
 import os, time, sys
 from Plugins.Configs.Settings import *
 
+def Menu_Error():
+    clearConsole()
+    NoLoad_Banner()
+    print(Bright_Red + "")
+    Auto_Text_20 = "Error78; The Selected Menu Is Not Found."
+    for char in Auto_Text_20:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.3)
+
+    print("")
+    Auto_Text_21 = "Or you have entered invailed Text!"
+    for char in Auto_Text_21:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.3)
+    print("")    
+    print(Bright_Green +"If Menu is Chat, write 'Chat' not 'chat'")
+    print("Note: You can use 'Chat' to chat with;")
+    print("Mr RekcahDA_Bot!")
+
 def Script_Games():
     Script_Games = "-------BlackDocument Script Games--------"
     print(BG_Bright_Cyan + Bright_Magenta)
@@ -46,4 +67,4 @@ You Want To Open As It Is...")
                 sys.stdout.flush()
                 time.sleep(0.3)
     else:
-        print(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red +"Thank You For Your Time.")
+        Menu_Error()

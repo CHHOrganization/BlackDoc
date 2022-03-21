@@ -24,10 +24,10 @@ $ python BlackDocument.py
 Single Command;
 $ apt update && apt upgrade && pkg install python && pkg install git && git clone https://github.com/CHHOrganization/BlackDoc && cd BlackDoc && python BlackDocument.py
 
-This is BlackDoc V0.0.03
-Security Level 1.03 
-Bot Version: V0.0.01 
-Response Level 1.01 
+This is BlackDoc V0.0.04
+Security Level 1.04 
+Bot Version: V0.0.02 
+Response Level 1.02 
 
 Features; Updates // VPN Files // 
 Yaaic Config // DarkWeb Links // 

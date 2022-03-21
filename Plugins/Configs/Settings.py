@@ -197,7 +197,7 @@ System To Quit Later or Type 'Chat'"
 MT_msg = "You Got All The Time You Need To Finish\n\
 Reading"
 TO_msg = "Thank You For Using BlackDocument..."
-Exit_msg = "To Check On More Options Please Reopen\n\
+Exit_msg = "To Check On More Options Please Reopen  \n\
 BlackDocument.py or try RekcahDA_Bot\n\
 (Chat)"
 MT_msg2 = "You So Slow, Bye Bye..."

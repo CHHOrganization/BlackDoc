@@ -212,7 +212,7 @@ def clearConsole():
     if os.name in ('nt', 'dos'): 
         #If Machine is running on Windows, it will use cls
         Refresh = 'cls'
-        os.system(Refresh)
+    os.system(Refresh)
 
 #Banner Config
 def Login_Banner():

@@ -18,6 +18,8 @@ from Plugins.Configs.Pages.More_Menu_Pages.About_Us import *
 from Plugins.Configs.Pages.More_Menu_Pages.Members_List import *
 from Plugins.Configs.Pages.More_Menu_Pages.Script_Games import *
 
+clearConsole()
+
 #This Script Must Not Be Copyrighted As It Will Make The Org Ban Your Membership!
 #Developed By: CHHOrg
 #Promoted By: DarkDoor

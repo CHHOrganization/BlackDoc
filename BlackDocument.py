@@ -16,9 +16,8 @@ from Plugins.Configs.Pages.Chat_App import *
 from Plugins.Configs.Pages.More_Menu_Pages.Org_Rules import *
 from Plugins.Configs.Pages.More_Menu_Pages.About_Us import *
 from Plugins.Configs.Pages.More_Menu_Pages.Members_List import *
+from Plugins.Configs.Pages.More_Menu_Pages.Script_Games import *
 
-
-clearConsole()
 #This Script Must Not Be Copyrighted As It Will Make The Org Ban Your Membership!
 #Developed By: CHHOrg
 #Promoted By: DarkDoor
@@ -107,7 +106,6 @@ def Menu_Error():
     print(Bright_Green +"If Menu is Chat, write 'Chat' not 'chat'")
     print("Note: You can use 'Chat' to chat with;")
     print("Mr RekcahDA_Bot!")
-    #End Part
 
 def Membership_Details():
     #Logged in User Details
@@ -137,6 +135,7 @@ def Membership_Details():
 
 #The Script Loop
 while True:
+    clearConsole()
     #Banner
     Login_Banner()
     #Login System & Instructions
@@ -261,7 +260,7 @@ while True:
                                     #About The Org
                                     clearConsole()
                                     NoLoad_Banner()
-                                    Org_Rules()
+                                    About_Us()
                                     Logout_System()
                                     break
 
@@ -270,6 +269,14 @@ while True:
                                     clearConsole()
                                     NoLoad_Banner()
                                     Members_List()
+                                    Logout_System()
+                                    break
+
+                                elif More_MenuQ == "Script Games":
+                                    #Script Games Page
+                                    clearConsole()
+                                    NoLoad_Banner()
+                                    Script_Games()
                                     Logout_System()
                                     break
                                 else:

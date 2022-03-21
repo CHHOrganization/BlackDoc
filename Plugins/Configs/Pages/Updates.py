@@ -156,13 +156,13 @@ Updates"
     print("")
 
     print(Bright_Magenta + Ms1 + Bright_Green +"). We added Colors")
-    print(Bright_Magenta + Ms6 + Bright_Green +"). We added Banner")
-    print(Bright_Magenta + Ms7 + Bright_Green +"). We added more error messages")
+    print(Bright_Magenta + Ms2 + Bright_Green +"). We added Banner")
+    print(Bright_Magenta + Ms3 + Bright_Green +"). We added more error messages")
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
 
     print(Bright_Cyan + "")
     Auto_Text_7 = "Date: 22/02 - 01/03/2022 Updates\n\
-([New Version])"
+([Previous Version])"
     for char in Auto_Text_7: 
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -190,10 +190,10 @@ Updates"
     print(Bright_Magenta + Ms1 + Bright_Green +"). We added new menu items")
     print(Bright_Magenta + Ms2 + Bright_Green +"). We added script animation")
     print(Bright_Magenta + Ms3 + Bright_Green +"). We added new security for exits")
-    print(Bright_Magenta + Ms3 + Bright_Green +"). We added a Bot")
-    print(Bright_Magenta + Ms3 + Bright_Green +"). We added Commands")
-    print(Bright_Magenta + Ms3 + Bright_Green +"). We added Org Rules at More. in Menu")
-    print(Bright_Magenta + Ms3 + Bright_Green +"). We added Loading Progress")
+    print(Bright_Magenta + Ms4 + Bright_Green +"). We added a Bot")
+    print(Bright_Magenta + Ms5 + Bright_Green +"). We added Commands")
+    print(Bright_Magenta + Ms6 + Bright_Green +"). We added Org Rules at More. in Menu")
+    print(Bright_Magenta + Ms7 + Bright_Green +"). We added Loading Progress")
             
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
 
@@ -212,5 +212,64 @@ Installations.")
     print(Bright_Magenta + Ms2 + Bright_Green +"). Other Items in Menu they are\n\
 Unavailable")
     print(Bright_Magenta + Ms3 + Bright_Green +"). The script is still under Developing")
+    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+
+    print(Bright_Cyan + "")
+    Auto_Text_7 = "Date: 01/03 - 21/03/2022 Updates\n\
+([New Version])"
+    for char in Auto_Text_7: 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.3)
+                
+    print(Bright_Red + "")
+    Auto_Text_6 = "[+] -> FIXED Errors"
+    for char in Auto_Text_6: 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("")
+
+    print(Bright_Magenta + Ms1 + Bright_Green +"). Fixed Login Security")
+    print(Bright_Magenta + Ms2 + Bright_Green +"). Fixed More Menu Logout System")
+    print(Bright_Magenta + Ms3 + Bright_Green +"). Fixed Directory Of Game; EvilNinja")
+    print(Bright_Magenta + Ms3 + Bright_Green +"). Fixed Updates Page (Updates Numbering)")
+    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+
+    print(Bright_Red + "")
+    Auto_Text_5 = "[+] -> New Features"
+    for char in Auto_Text_5: 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("")
+
+    print(Bright_Magenta + Ms1 + Bright_Green +"). We added loop")
+    print(Bright_Magenta + Ms2 + Bright_Green +"). We we changed colors")
+    print(Bright_Magenta + Ms3 + Bright_Green +"). We advanced login security")
+    print(Bright_Magenta + Ms4 + Bright_Green +"). We added a game called EvilNinja")
+    print(Bright_Magenta + Ms5 + Bright_Green +"). We modified the program")
+    print(Bright_Magenta + Ms6 + Bright_Green +"). We made more menu items available")
+    print(Bright_Magenta + Ms7 + Bright_Green +"). Hacking Lessons Will Be Available\n\
+Date; 01/04/2022")
+            
+    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+
+    print(Bright_Red +"")
+    Auto_Text_4 = "[+] -> Errors"
+    for char in Auto_Text_4: 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("")
+    print(Bright_Magenta + Ms1 + Bright_Green +"). Chat Option in Menu for Termux/Linux\n\
+Is not working!!!\n\
+\n\
+Note: BlackDoc Might Be In Github\n\
+But Is Still Under developing.")
+    print(Bright_Magenta + Ms1 + Bright_Green +"). Other Items in Menu they are\n\
+Unavailable")
+    print(Bright_Magenta + Ms2 + Bright_Green +"). The script is still under Developing")
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
     print(Dark_Blue + BG_Dark_Green + Line + Rest)

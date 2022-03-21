@@ -42,6 +42,7 @@ II). Guessing Game: Black WareMoney\n\
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.1)
+    print("")
     print(Bright_Red + "Please Use The Name Of A Game\n\
 You Want To Open As It Is...")
     Answer = input(Bright_Cyan + "Which Game You Wanna Play? ")

@@ -1,5 +1,5 @@
 import os,sys,time
-from Plugins.Configs.Settings import *
+from Settings import *
 
 #EVilNinja Data
 Level_1_Names = ["Kerry", "Jackey", "Mary", "Blackey", "Melisa", "Susan"]

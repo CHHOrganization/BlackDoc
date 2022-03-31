@@ -1,5 +1,6 @@
 import os,sys,time
-from Plugins.Configs.Settings import *
+from Settings import *
+from Functions import *
 import Functions as Config
 
 clearConsole()
@@ -78,68 +79,69 @@ To Get This Password Right!"
             if len(Stage1) < 9 or len(Stage1) > 9:
                 print(Bright_Red + "The Password Contain 9 Characters.")
                 continue
-            if Stage1 == EL_Passwords[0]:
-                print(BG_Dark_Magenta + Bright_Yellow)
-                Stage1_msg = "            Congradulations              \n\
-                You Won                  "
-                for char in Stage1_msg:
-                    sys.stdout.write(char)
-                    sys.stdout.flush()
-                    time.sleep(0.1)
-                print(Rest)
-                print(BG_Dark_Blue + "         " + Bright_Green + Stage1 + " Is Correct!           "+ Rest)
-                Answer = input(BG_Bright_Green + Bright_Blue + "Next Stage? <(Y|N)>" + Rest + Bright_Green + " ")
-                if Answer == "N":
-                    print(Dark_Red + "Thank You For Playing EvilNinja.")
-                    break
-                else:
-                    Config.Victims_DDB()
-                    Config.Victims_Data_ELS2()
-                    Stage2 = input(Bright_Cyan + "Password: ")
-                    if len(Stage2) < 10 or len(Stage2) > 10:
-                        print(Bright_Red + "The Password Contain 10 Characters.")
-                        continue
-                    if Stage2 == EL_Passwords[1]:
-                        print(BG_Dark_Magenta + Bright_Yellow)
-                        Stage2_msg = "            Congradulations              \n\
-                You Won                  "
-                        for char in Stage2_msg:
-                            sys.stdout.write(char)
-                            sys.stdout.flush()
-                            time.sleep(0.1)
-                        print(Rest)
-                        print(BG_Dark_Blue + "         " + Bright_Green + Stage2 + " Is Correct!          "+ Rest)
-                        
-                        Answer = input(BG_Bright_Green + Bright_Blue + "Next Stage? <(Y|N)>" + Rest + Bright_Green + " ")
-                        if Answer == "N":
-                            print(Dark_Red + "Thank You For Playing EvilNinja.")
-                            break
-                        else:
-                            Config.Victims_DDB()
-                            Config.Victims_Data_ELS3()
-                            Stage3 = input(Bright_Cyan + "Password: ")
-                            if len(Stage3) < 10 or len(Stage3) > 10:
-                                print(Bright_Red + "The Password Contain 10 Characters.")
-                                continue
-                            if Stage3 == EL_Passwords[2]:
-                                print(BG_Dark_Magenta + Bright_Yellow)
-                                Stage3_msg = "            Congradulations              \n\
-                You Won                  "
-                                for char in Stage3_msg:
-                                    sys.stdout.write(char)
-                                    sys.stdout.flush()
-                                    time.sleep(0.1)
-                                print(Rest)
-                                print(BG_Dark_Blue + "         " + Bright_Green + Stage3 + " Is Correct!          "+ Rest)
-                            else:
-                                Config.Try_Again()
-                                
+            else:
+                if Stage1 == EL_Passwords[0]:
+                    print(BG_Dark_Magenta + Bright_Yellow)
+                    Stage1_msg = "            Congradulations              \n\
+                    You Won                  "
+                    for char in Stage1_msg:
+                        sys.stdout.write(char)
+                        sys.stdout.flush()
+                        time.sleep(0.1)
+                    print(Rest)
+                    print(BG_Dark_Blue + "         " + Bright_Green + Stage1 + " Is Correct!           "+ Rest)
+                    Answer = input(BG_Bright_Green + Bright_Blue + "Next Stage? <(Y|N)>" + Rest + Bright_Green + " ")
+                    if Answer == "N":
+                        print(Dark_Red + "Thank You For Playing EvilNinja.")
                         break
                     else:
-                        Config.Try_Again()
+                        Config.Victims_DDB()
+                        Config.Victims_Data_ELS2()
+                        Stage2 = input(Bright_Cyan + "Password: ")
+                        if len(Stage2) < 10 or len(Stage2) > 10:
+                            print(Bright_Red + "The Password Contain 10 Characters.")
+                            continue
+                        if Stage2 == EL_Passwords[1]:
+                            print(BG_Dark_Magenta + Bright_Yellow)
+                            Stage2_msg = "            Congradulations              \n\
+                    You Won                  "
+                            for char in Stage2_msg:
+                                sys.stdout.write(char)
+                                sys.stdout.flush()
+                                time.sleep(0.1)
+                            print(Rest)
+                            print(BG_Dark_Blue + "         " + Bright_Green + Stage2 + " Is Correct!          "+ Rest)
+                            
+                            Answer = input(BG_Bright_Green + Bright_Blue + "Next Stage? <(Y|N)>" + Rest + Bright_Green + " ")
+                            if Answer == "N":
+                                print(Dark_Red + "Thank You For Playing EvilNinja.")
+                                break
+                            else:
+                                Config.Victims_DDB()
+                                Config.Victims_Data_ELS3()
+                                Stage3 = input(Bright_Cyan + "Password: ")
+                                if len(Stage3) < 10 or len(Stage3) > 10:
+                                    print(Bright_Red + "The Password Contain 10 Characters.")
+                                    continue
+                                if Stage3 == EL_Passwords[2]:
+                                    print(BG_Dark_Magenta + Bright_Yellow)
+                                    Stage3_msg = "            Congradulations              \n\
+                    You Won                  "
+                                    for char in Stage3_msg:
+                                        sys.stdout.write(char)
+                                        sys.stdout.flush()
+                                        time.sleep(0.1)
+                                    print(Rest)
+                                    print(BG_Dark_Blue + "         " + Bright_Green + Stage3 + " Is Correct!          "+ Rest)
+                                else:
+                                    Config.Try_Again()
+                                    
+                            break
+                        else:
+                            Config.Try_Again()
 
-            else:
-                Config.Try_Again()
+                else:
+                    Config.Try_Again()
                 
         except:
             print(Bright_Red + "Hack The Password\n\

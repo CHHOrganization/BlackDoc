@@ -54,7 +54,7 @@ def Apps():
     print(Bright_Magenta + Ms13 + Bright_Green +"). Yaaic")
     print(Bright_Red + "Description; "+ Bright_Green + "This App Assist Memebers")
     print("To Connect To The Organization Server.")
-    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+    Loading_Prograss()
 
     #Learning Apps
     print(Bright_Blue + "[" + Bright_Red + "]" + Bright_Magenta + "->" + Bright_Yellow + "Learning Apps")
@@ -97,7 +97,7 @@ def Apps():
     print(Bright_Magenta + Ms13 + Bright_Green +"). Python X")
     print(Bright_Red + "Description; "+ Bright_Green + "This App Teach Memebers")
     print("Python With An Online App.")
-    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+    Loading_Prograss()
 
     #IT Games
     print(Bright_Blue + "[" + Bright_Red + "]" + Bright_Magenta + "->" + Bright_Yellow + "IT Games")
@@ -119,5 +119,4 @@ def Apps():
     print(Bright_Magenta + Ms6 + Bright_Green +"). I Hacker" + Bright_Red + " Recommanded")
     print(Bright_Red + "Description; "+ Bright_Green + "This App Teach Memebers")
     print("How To Crack Passwords From 'Basics' To 'GrandMaster' Level.")
-    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-    print(Dark_Blue + BG_Dark_Green + Line + Rest)
+    Loading_Prograss()

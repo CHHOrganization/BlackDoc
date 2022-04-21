@@ -115,9 +115,6 @@ Print_Memberships = "[+] -> Memberships [Full Detals] Updates\n\
 Date: 24/02/2022\n\
 \n\
 I). Membership: RekcahHC_I\n\
-    Nickname: GoldenThug RSS\n\
-    Location: South Africa\n\
-    Link: T.me/RekcahHC_I\n\
     \n\
     Skills List\n\
     I). Full Stock Developer\n\
@@ -128,9 +125,6 @@ I). Membership: RekcahHC_I\n\
     VI). VPN Creator\n\
 \n\
 II). Membership: RekcahHC_II\n\
-     Nickname: Divine INFINITY\n\
-     Location: South Africa\n\
-     Link: T.me/RekcahHC_II\n\
      \n\
      Skills List\n\
      I). Hacking; Facebook // Instagram // Etc\n\
@@ -141,16 +135,10 @@ II). Membership: RekcahHC_II\n\
      VI). VPN Moddern\n\
     \n\
 III). Membership: RekcahHC_III (Pending)\n\
-      Location: North America\n\
 \n\
 IV). Membership: RekcahHC_IV (Pending)\n\
-     Location: Nigeria\n\
     \n\
 V). Membership: RekcahHC_V\n\
-    Location: Ghana\n\
-    Nickname: PJmax\n\
-    Link: T.me/RekcahHC_V\n\
-    YouTuber: @DoriCodes\n\
     \n\
     Skills List\n\
     I). Programming Languages; Python // C++ // HTML // CSS\n\
@@ -158,9 +146,6 @@ V). Membership: RekcahHC_V\n\
     III). A Little Experience In Kali Linux\n\
 \n\
 VI). Membership: RekcahHC_VI)\n\
-     Location: South Africa\n\
-     Nickname: Deoderant Dee\n\
-     Link: T.me/RekcahHC_VI\n\
     \n\
     Skills List\n\
     I). Coding With Python\n\
@@ -168,16 +153,12 @@ VI). Membership: RekcahHC_VI)\n\
     IV). Website Developer\n\
 \n\
 VII). Membership: RekcahHC_VII (Pending)\n\
-      Location: Ghana\n\
 \n\
 VIII). Membership: RekcahHC_VIII (Pending)\n\
-       Location: India\n\
 \n\
 IX). Membership: RekcahHC_IX (Pending)\n\
-     Location: China\n\
 \n\
-X). Membership: RekcahHC_X\n\
-    Location: Nigeria"
+X). Membership: RekcahHC_X"
 #End Line Of Memberships
 
 #Member

@@ -11,9 +11,6 @@ def Memberships():
 
     #RekcahHC_I Details
     print(Bright_Magenta + Ms1 + Bright_Red +"). Membership:"+ Membership + Ms1)
-    print("Nickname: GoldenThug RSS")
-    print("Location: South Africa")
-    print("Link: T.me/"+ Membership + Ms1)
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Full Stock Developer")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Digital Marketer")
@@ -26,9 +23,6 @@ def Memberships():
 
     #RekcahHC_II Deatils
     print(Bright_Magenta + Ms2 + Bright_Red +"). Membership:"+ Membership + Ms2)
-    print("Nickname: Divine INFINITY")
-    print("Location: South Africa")
-    print("Link: T.me/"+ Membership + Ms2)
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Hacking; Facebook // Instagram // Etc")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Modding")
@@ -41,18 +35,12 @@ def Memberships():
     
 
     print(Bright_Magenta + Ms3 + Bright_Red +"). Membership:"+ Membership + Ms3)
-    print("Location: North America")
     print(Bright_Magenta + Ms4 + Bright_Red +"). Membership:"+ Membership + Ms4)
-    print("Location: Nigeria")
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
 
     #RekachHC_V
     print(Bright_Magenta + Ms5 + Bright_Red +"). Membership:"+ Membership + Ms5)
-    print("Location: Ghana")
-    print("Nickname: PJmax")
-    print("Link: T.me/"+ Membership + Ms5)
-    print("YouTuber: @DoriCodes")
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Programming Languages; Python // C++ // HTML // CSS")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Termux Hacker")
@@ -63,9 +51,6 @@ def Memberships():
 
     #RekcahHC_VI
     print(Bright_Magenta + Ms6 + Bright_Red +"). Membership:"+ Membership + Ms6)
-    print("Location: South Africa")
-    print("Nickname: Deoderant Dee")
-    print("Link: T.me/"+ Membership + Ms6)
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Coding With Python")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Using VPN")
@@ -77,9 +62,6 @@ def Memberships():
     print("Location: India")
 
     print(Bright_Magenta + Ms8 + Bright_Red +"). Membership:"+ Membership + Ms8)
-    print("Location: Nigeria")
-    print("Nickname: WhiteDevil")
-    print("Link: T.me/"+ Membership + Ms8)
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Coding With Ionic FrameWork")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Phishing")
@@ -91,14 +73,9 @@ def Memberships():
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
 
     print(Bright_Magenta + Ms9 + Bright_Red +"). Membership:"+ Membership + Ms9)
-    print("Location: China")
     print(Bright_Magenta + Ms10 + Bright_Red +"). Membership:"+ Membership + Ms10)
-    print("Location: Nigeria")
 
     print(Bright_Magenta + Ms11 + Bright_Red +"). Membership:"+ Membership + Ms11)
-    print("Location: Nigeria")
-    print("Nickname: Wizard")
-    print("Link: T.me/"+ Membership + Ms11)
     print(Bright_Green +"Skills List")
     print(Bright_Magenta + Ms1 + Bright_Red +"). Coding With Python")
     print(Bright_Magenta + Ms2 + Bright_Red +"). Computer Hardware Engineering")

@@ -1,16 +1,30 @@
 import os, time, sys
-
+from Plugins.Configs.FireWall.Evil_TwiNinja import *
 #Banner Data
 B1 = "-----------------------------------------"
 B2 = "-----------------------------------------"
 B3 = "--- Cryptic Hats Hackers Organization ---"
-B4 = "---         BlackDoc V0.0.04          ---"
-B5 = "---       Security Level: 1.04        ---"
+B4 = "---         BlackDoc V0.0.05          ---"
+B5 = "---       Security Level: 1.05+       ---"
 B6 = "-----------------------------------------"
 B7 = "-----------------------------------------"
 Banner_msg = "Follow Us At Telegram To Stay Upto Date."
 Line = "*****************************************"
 Endl = "     100% BlackDoc Is Done Loading       "
+Status_On = "Preminum Member"
+Status_Off = "Unrecognized Member"
+
+#Banner Data
+FWB1 = "-----------------------------------------"
+FWB2 = "-----------------------------------------"
+FWB3 = "--- Cryptic Hats Hackers Organization ---"
+FWB4 = "---         BlackDoc V0.0.05          ---"
+FWB5 = "---     TwiNinga FireWall: 1.01       ---"
+FWB6 = "-----------------------------------------"
+FWB7 = "-----------------------------------------"
+FWBanner_msg = "Use RekORG Codes Details To Gain Access."
+FWLine = "*****************************************"
+FWEndl = "     100% BlackDoc Is Done Loading       "
 
 #Menu Data
 Menu_TB = "_________________________________________"
@@ -102,6 +116,18 @@ If you are a new member please see\n\
 the Menu on how to Install it and\n\
 how to Configure it after da \n\
 Installation."
+
+Unlocked_Version_msg = "BlackDoc Is a  Cryptic Hats Hackers\n\
+Organization Script to teach IT Fundamentals\n\
+For Free. This Script must not be misused\n\
+And everything you will learn in there must\n\
+stay between you and your heart as we are\n\
+not responsable about any misuse of our\n\
+teachings cause we Teach Ethical hacking\n\
+What you do with the skills you will obtain\n\
+with us, is your own benefit and study at\n\
+our knowledge of risk you might obtain\n\
+in real actions."
 Membership = "RekcahHC_"
 #Membership Numbers Data
 Ms1 = "I"
@@ -267,6 +293,12 @@ def Login_Banner():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.0)
+    
+    print(BG_Dark_Red + Bright_Green)
+    for char in Status_Off:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
     print(Rest +"")
 
 #Login System Config
@@ -404,6 +436,12 @@ def Index_Banner():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.0)
+    
+    print(BG_Dark_Blue + Bright_Green)
+    for char in Status_On:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
     print(Rest +"")
 
 def NoLoad_Banner():
@@ -459,6 +497,134 @@ def NoLoad_Banner():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.0)
+    
+    print(BG_Dark_Blue + Bright_Green)
+    for char in Status_On:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Rest +"")
+
+def NoLoad_Banner2():
+    #Welcoming Index Texts
+    #Banner
+    print(Bright_Red + "Note; Wait For 0sec, It Will Finish Soon"+ Bright_Yellow)
+    for char in B1:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B2:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B3:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B4:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B5:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B6:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in B7:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Bright_Cyan + "")
+    for char in Banner_msg:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Dark_Blue + BG_Dark_Green + "")
+    for char in Line:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Rest + Bright_Green + BG_Dark_Blue)
+    for char in Endl:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    
+    print(BG_Dark_Red + Bright_Green)
+    for char in Status_Off:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Rest +"")
+
+def Firewall_Banner():
+    #Welcoming Index Texts
+    #Banner
+    print(Bright_Red + "Note; Wait For 0sec, It Will Finish Soon"+ Bright_Yellow)
+    for char in FWB1:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB2:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB3:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB4:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB5:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB6:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print("")
+    for char in FWB7:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Bright_Cyan + "")
+    for char in FWBanner_msg:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Dark_Blue + BG_Dark_Green + "")
+    for char in Line:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    print(Rest + Bright_Green + BG_Dark_Blue)
+    for char in Endl:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
+    
+    print(BG_Dark_Red + Bright_Green)
+    for char in Status_Off:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.0)
     print(Rest +"")
 
 def Index_Welcome_msg():
@@ -500,6 +666,20 @@ def Index_Welcome_msg():
         time.sleep(0.1)
     print("")
 
+def Index_Welcome_msg2():
+    #Index Texts In Animated Format
+    print(Bright_Green)
+    for char in Header:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    print("")
+    for char in Unlocked_Version_msg:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    print("")
+
 def Main_Menu():
     #Script Menu
     Auto_Text_4 = "[+] -> Menu"
@@ -511,12 +691,12 @@ def Main_Menu():
     print("")
 
     #Building Menu
-    print(Bright_Cyan + BG_Bright_Magenta + Menu_TB)
-    print(Bright_Cyan + BG_Bright_Magenta + Menu1)
-    print(Bright_Cyan + BG_Bright_Magenta + Menu2)
-    print(Bright_Cyan + BG_Bright_Magenta + Menu3)
-    print(Bright_Cyan + BG_Bright_Magenta + Menu4)
-    print(Bright_Cyan + BG_Bright_Magenta + Menu5)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu_TB + Rest)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu1 + Rest)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu2 + Rest)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu3 + Rest)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu4 + Rest)
+    print(Bright_Cyan + BG_Bright_Magenta + Menu5 + Rest)
     print(Bright_Cyan + BG_Bright_Magenta + Menu_BB + Rest)
 
     print(Bright_Magenta + "")
@@ -537,11 +717,11 @@ def More_Menu():
     print("")
 
     #Building Menu
-    print(Bright_Cyan + BG_Dark_Magenta + Menu_TB)
-    print(Bright_Cyan + BG_Dark_Magenta + More_Menu1)
-    print(Bright_Cyan + BG_Dark_Magenta + More_Menu2)
-    print(Bright_Cyan + BG_Dark_Magenta + More_Menu3)
-    print(Bright_Cyan + BG_Dark_Magenta + More_Menu4)
+    print(Bright_Cyan + BG_Dark_Magenta + Menu_TB + Rest)
+    print(Bright_Cyan + BG_Dark_Magenta + More_Menu1 + Rest)
+    print(Bright_Cyan + BG_Dark_Magenta + More_Menu2 + Rest)
+    print(Bright_Cyan + BG_Dark_Magenta + More_Menu3 + Rest)
+    print(Bright_Cyan + BG_Dark_Magenta + More_Menu4 + Rest)
     print(Bright_Cyan + BG_Dark_Magenta + Menu_BB + Rest)
 
     print(Bright_Magenta + "")
@@ -550,6 +730,32 @@ def More_Menu():
         sys.stdout.flush()
         time.sleep(0.2)
     print("")
+
+def Chat_App():
+    Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
+    if Answer !="N":
+        Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
+        if Answer == "L": 
+            Linux = "cd Plugins && cd Configs && bash CDir_Config.sh "
+            os.system(Linux)
+        elif Answer == "W":
+            Windows = "cd Plugins && cd RekcahDA_Bot && python Chat.py"
+            os.system(Windows)
+        else:
+            print("")
+            Auto_Text_129 = "RekcahDA_Bot: Please Use L or W As Your Answer"
+            for char in Auto_Text_129:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            print("")
+            print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
+            for char in TO_msg:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.3)
+    else:
+        print(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red +"Thank You For Your Time.")
 
 def Logout_System():
     #Logout Config
@@ -583,28 +789,8 @@ def Logout_System():
                 time.sleep(0.1)
 
         elif Moretime == "Chat":
-            Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
-            if Answer !="N":
-                Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
-                if Answer == "L": 
-                    Linux = "cd Plugins && cd Configs && bash CDir_Config.sh "
-                    os.system(Linux)
-                elif Answer == "W":
-                    Windows = "cd Plugins && cd RekcahDA_Bot && python Chat.py"
-                    os.system(Windows)
-                else:
-                    print("")
-                    Auto_Text_129 = "RekcahDA_Bot: Please Use L or W As Your Answer"
-                    for char in Auto_Text_129:
-                        sys.stdout.write(char)
-                        sys.stdout.flush()
-                        time.sleep(0.1)
-                    print("")
-                    print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
-                    for char in TO_msg:
-                        sys.stdout.write(char)
-                        sys.stdout.flush()
-                        time.sleep(0.3)
+            Chat_App()
+
         elif Moretime == "Y":
             print(Rest +""+ Bright_Red +"The End...")
             print("")
@@ -613,6 +799,9 @@ def Logout_System():
                 sys.stdout.write(char)
                 sys.stdout.flush()
                 time.sleep(0.1)
+    elif Logout == "Chat":
+        Chat_App()
+
     else:
         print(Rest +""+ Bright_Red +"The End...")
         print("")
@@ -621,3 +810,11 @@ def Logout_System():
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(0.1)
+
+def Loading_Prograss():
+    print(Bright_Yellow + BG_Dark_Cyan)
+    for char in Empty:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.2)
+    print(""+ Rest)

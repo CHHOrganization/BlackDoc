@@ -105,7 +105,7 @@ def Hacking_Lessons():
     print("-> " + Bright_Red + " [Set 29]")
 
     Answer = int(input(Bright_Cyan + "Select 'Set' No; "))
-    if Answer == 1:
+    if Answer == Numbering_Firewall[1]:
         #Set 1 Details
         print(Bright_Magenta + Ms1 + Bright_Green +"). Ethical Hacking - Overview")
 
@@ -113,21 +113,21 @@ def Hacking_Lessons():
         Logout_System()
     #End Part
 
-    elif Answer == 2:
+    elif Answer == Numbering_Firewall[2]:
         print(Bright_Magenta + Ms2 + Bright_Green +"). Typings Of Hacking")
 
         #Logout Config
         Logout_System()
     #End Part
 
-    elif Answer == 3:
+    elif Answer == Numbering_Firewall[3]:
         print(Bright_Magenta + Ms3 + Bright_Green +"). Advantages Of Ethical Hacking")
 
         #Logout Config
         Logout_System()
     #End Part
 
-    elif Answer == 4:
+    elif Answer == Numbering_Firewall[4]:
         print(Bright_Magenta + Ms4 + Bright_Green +"). Hacker Types")
 
         #Logout Config

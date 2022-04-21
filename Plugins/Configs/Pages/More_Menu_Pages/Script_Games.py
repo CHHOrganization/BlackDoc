@@ -48,10 +48,10 @@ You Want To Open As It Is...")
     Answer = input(Bright_Cyan + "Which Game You Wanna Play? ")
     if Answer == "EvilNinja":
         Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
-        if Answer == "L": 
+        if Answer == CD_OS[0]: 
             Linux = "cd Plugins && cd Configs && bash CDir_Config_Games.sh "
             os.system(Linux)
-        elif Answer == "W":
+        elif Answer == CD_OS[1]:
             Windows = "cd Plugins && cd Games && cd EvilNinja && python EvilNinja.py"
             os.system(Windows)
         else:

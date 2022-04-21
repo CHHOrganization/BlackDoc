@@ -7,7 +7,7 @@ def Yaaic_Config():
     Index_Banner()
     print(Bright_Yellow +"Yaaic Configurations and Installation")
     answer = input(Bright_Cyan +"Do you to Config or Install? (C/I) ")
-    if answer == "C" or answer == "c":
+    if answer == "C":
 
         #Configurations Script
         print(Dark_Blue + BG_Dark_Green + Line + Rest)
@@ -28,7 +28,7 @@ Believe me if I say 'Is Worthy It'")
         print(Bright_Magenta + Ms1 + Bright_Green +". To begin your first step after the\n\
 Installation open your App")
         answer = input(Bright_Cyan +"Are You Done? (Y/N) ")
-        if answer == "Y" or answer == "y":
+        if answer == Binary_Firewall[1]:
 
             print(Dark_Blue + BG_Dark_Green + Line + Rest)
             print(Dark_Blue + BG_Dark_Green + Line + Rest)

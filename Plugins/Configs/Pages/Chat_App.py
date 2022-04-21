@@ -3,12 +3,12 @@ from Plugins.Configs.Settings import *
 
 def Chat_App():
     Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
-    if Answer !="N":
+    if Answer != Binary_Firewall[0]:
         Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
-        if Answer == "L": 
+        if Answer == CD_OS[0]: 
             Linux = "cd Plugins && cd Configs && bash CDir_Config.sh "
             os.system(Linux)
-        elif Answer == "W":
+        elif Answer == CD_OS[1]:
             Windows = "cd Plugins && cd RekcahDA_Bot && python Chat.py"
             os.system(Windows)
         else:

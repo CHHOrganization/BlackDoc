@@ -24,8 +24,8 @@ $ python BlackDocument.py
 Single Command;
 $ apt update && apt upgrade && pkg install python && pkg install git && git clone https://github.com/CHHOrganization/BlackDoc && cd BlackDoc && python BlackDocument.py
 
-This is BlackDoc V0.0.04
-Security Level 1.04 
+This is BlackDoc V0.0.05
+SAFWAL Level: 1.0.5+
 Bot Version: V0.0.02 
 Response Level 1.02 
 

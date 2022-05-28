@@ -5,7 +5,7 @@ B1 = "-----------------------------------------"
 B2 = "-----------------------------------------"
 B3 = "--- Cryptic Hats Hackers Organization ---"
 B4 = "---         BlackDoc V0.0.05          ---"
-B5 = "---       Security Level: 1.05+       ---"
+B5 = "---       SAFWAL Level: 1.0.5+        ---"
 B6 = "-----------------------------------------"
 B7 = "-----------------------------------------"
 Banner_msg = "Follow Us At Telegram To Stay Upto Date."
@@ -19,7 +19,7 @@ FWB1 = "-----------------------------------------"
 FWB2 = "-----------------------------------------"
 FWB3 = "--- Cryptic Hats Hackers Organization ---"
 FWB4 = "---         BlackDoc V0.0.05          ---"
-FWB5 = "---     TwiNinga FireWall: 1.01       ---"
+FWB5 = "---       SAFWAL Level: 1.0.5+        ---"
 FWB6 = "-----------------------------------------"
 FWB7 = "-----------------------------------------"
 FWBanner_msg = "Use RekORG Codes Details To Gain Access."
@@ -118,16 +118,18 @@ how to Configure it after da \n\
 Installation."
 
 Unlocked_Version_msg = "BlackDoc Is a  Cryptic Hats Hackers\n\
-Organization Script to teach IT Fundamentals\n\
-For Free. This Script must not be misused\n\
-And everything you will learn in there must\n\
-stay between you and your heart as we are\n\
-not responsable about any misuse of our\n\
-teachings cause we Teach Ethical hacking\n\
-What you do with the skills you will obtain\n\
-with us, is your own benefit and study at\n\
-our knowledge of risk you might obtain\n\
-in real actions."
+Organization Script to teach IT\n\
+Fundamentals For Free. This Script\n\
+Must not be misused and everything\n\
+You learn in there must stay between\n\
+You and your heart as we are not \n\
+Responsable about any misuse of our\n\
+Teachings cause we Teach Ethical hacking\n\
+What you do with the skills you will\n\
+Otain with us, is your own benefit and\n\
+Study at your own knowledge of risk you\n\
+Might obtain in real acts.\n\
+If you practice!!!"
 Membership = "RekcahHC_"
 #Membership Numbers Data
 Ms1 = "I"
@@ -227,12 +229,11 @@ Exit_msg = "To Check On More Options Please Reopen  \n\
 BlackDocument.py or try RekcahDA_Bot\n\
 (Chat)"
 MT_msg2 = "You So Slow, Bye Bye..."
-Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-/-/\n\
+Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/\n\
 -\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-"
-Short_Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-/-/"
+Short_Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/"
 
 #Functions
-#Clearing Screen
 def clearConsole():
     Refresh = 'clear'   
     if os.name in ('nt', 'dos'): 
@@ -240,7 +241,6 @@ def clearConsole():
         Refresh = 'cls'
     os.system(Refresh)
 
-#Banner Config
 def Login_Banner():
     print(Bright_Red + "Note; Wait For 50sec, It Will Finish Soon"+ Bright_Yellow)
     for char in B1:
@@ -301,7 +301,6 @@ def Login_Banner():
         time.sleep(0.0)
     print(Rest +"")
 
-#Login System Config
 def Login_System():
     print(Bright_Green)
     for char in Header:
@@ -335,7 +334,6 @@ def Login_System():
         time.sleep(0.1)
     print("")
 
-#Welcome To Index Config
 def Welcome_Messages():
     #Index Texts In Animated Format
     print(Bright_Green)
@@ -759,39 +757,53 @@ def Chat_App():
 
 def Logout_System():
     #Logout Config
-    print(Bright_Red + "")
-    for char in Logout_msg:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.3)
-    print("")
-    Logout = input(BG_Bright_Red + Bright_Yellow +"Logout? <(Y/N)> "+ Rest + Bright_Green)
-    if Logout == "N":
-        print(Rest + Bright_Green + "")
-        for char in MT_msg:
+    while True:
+        print(Bright_Red + "")
+        for char in Logout_msg:
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(0.1)
-
-        print("" + Bright_Yellow + BG_Dark_Cyan)
-        for char in Empty:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.5)
-        print(""+ Rest)
-
-        Moretime = input(BG_Bright_Red + Bright_Yellow +"Are You Done Yet? <(Y/N)> " + Rest + Bright_Green)
-        print(Rest + Bright_Red + "")
-        if Moretime == "N":
-            for char in MT_msg2:
+            time.sleep(0.3)
+        print("")
+        Logout = input(BG_Bright_Red + Bright_Yellow +"Logout? <(Y/N)> "+ Rest + Bright_Green)
+        if Logout == Binary_Firewall[0]:
+            print(Rest + Bright_Green + "")
+            for char in MT_msg:
                 sys.stdout.write(char)
                 sys.stdout.flush()
                 time.sleep(0.1)
 
-        elif Moretime == "Chat":
-            Chat_App()
+            print("" + Bright_Yellow + BG_Dark_Cyan)
+            for char in Empty:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.5)
+            print(""+ Rest)
 
-        elif Moretime == "Y":
+            Moretime = input(BG_Bright_Red + Bright_Yellow +"Are You Done Yet? <(Y/N)> " + Rest + Bright_Green)
+            print(Rest + Bright_Red + "")
+            if Moretime == Binary_Firewall[0]:
+                for char in MT_msg2:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                break
+
+            elif Moretime == DemonFireWall[7]:
+                Chat_App()
+
+            elif Moretime == Binary_Firewall[1]:
+                print(Rest +""+ Bright_Red +"The End...")
+                print("")
+                print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
+                for char in TO_msg:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                break
+        elif Logout == "Chat":
+            Chat_App()
+            break
+        else:
             print(Rest +""+ Bright_Red +"The End...")
             print("")
             print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
@@ -799,17 +811,7 @@ def Logout_System():
                 sys.stdout.write(char)
                 sys.stdout.flush()
                 time.sleep(0.1)
-    elif Logout == "Chat":
-        Chat_App()
-
-    else:
-        print(Rest +""+ Bright_Red +"The End...")
-        print("")
-        print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
-        for char in TO_msg:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.1)
+            break
 
 def Loading_Prograss():
     print(Bright_Yellow + BG_Dark_Cyan)
@@ -818,3 +820,10 @@ def Loading_Prograss():
         sys.stdout.flush()
         time.sleep(0.2)
     print(""+ Rest)
+
+def Broken_User():
+    clearConsole()
+    NoLoad_Banner2()
+    Nickname = ""
+    print(Bright_Red + Nickname + ", Sorry you are not our member!!!")
+   

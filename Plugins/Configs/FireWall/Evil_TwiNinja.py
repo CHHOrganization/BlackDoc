@@ -56,3 +56,17 @@ Numbering_Firewall = [
 '9',
 '10',
 ]
+Firewall_CodeBase = [
+'Divine INFINITY',
+'PJmax',
+'Deoderant Dee',
+'GoldenThugRSS',
+'RekcahHC_III',
+'Spider Anongreyhat',
+'RekcahHC_VII',
+'Whitedevil',
+'RekcahHC_IX',
+'RekcahHC_X',
+'RekcahHC_XI',
+'Wizard',
+]

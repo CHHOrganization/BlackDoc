@@ -114,6 +114,27 @@ def Menu_Error():
     print(Bright_Green +"If Menu is Chat, write 'Chat' not 'chat'")
     print("Note: You can use 'Chat' to chat with;")
     print("Mr RekcahDA_Bot!")
+    Moretime_Load()
+
+def Options_Error2():
+    clearConsole()
+    NoLoad_Banner2()
+    print(Bright_Red + "")
+    Auto_Text_20 = "Error77; The Selected Option Is Not Supported."
+    for char in Auto_Text_20:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.3)
+
+    print("")
+    Auto_Text_21 = "Or you have entered invailed Text!"
+    for char in Auto_Text_21:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.3)
+    print("")    
+    print(Bright_Green +"If Option is Y, write 'Y' not 'y'")
+    Moretime_Load()
 
 def Firewall_Error():
     clearConsole()
@@ -293,9 +314,13 @@ You Can't Register here in this version!")
         Logout_System()
         break
     elif Answer == Binary_Firewall[1]:
-        print("If you are a member of the Org\n\
+        Membership_Scanner = "If you are a member of the Org\n\
 Please Enter The Firewall Security\n\
-Details;")
+Details;"
+        for char in Membership_Scanner:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.1)
         Nickname = input(Bright_Cyan + "Nickname: " + Bright_Green)
         if len(Nickname) >= 1:
             print(Dark_Blue + BG_Dark_Green + Line + Rest)
@@ -415,14 +440,12 @@ Secret Password for Preminum Members?\n\
                                                             Paying_Member = "Yes"
                                                         elif Paying_Member == "N":
                                                             Paying_Member = "No"
-                                                        
+                                                        else:
+                                                            Options_Error2()
                                                         #The Script Loop
                                                         while True:
                                                             def Run():
-                                                                x = 0
-                                                                y = 2
-                                                                while x == y:
-                                                                    x += 1
+                                                                while True:
                                                                     print(Dark_Blue + BG_Dark_Green + Line + Rest)
                                                                     print(Dark_Blue + BG_Dark_Green + Line + Rest)
                                                                     print(Dark_Blue + BG_Dark_Green + Line + Rest)
@@ -697,3 +720,6 @@ Secret Password for Preminum Members?\n\
         else:
             Nickname_Error2()
             continue
+    else:
+        Options_Error2()
+        continue

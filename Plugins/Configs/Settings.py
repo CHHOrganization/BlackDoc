@@ -233,6 +233,8 @@ Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/\n\
 -\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-"
 Short_Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/"
 
+x = 0
+
 #Functions
 def clearConsole():
     Refresh = 'clear'   
@@ -825,5 +827,14 @@ def Broken_User():
     clearConsole()
     NoLoad_Banner2()
     Nickname = ""
-    print(Bright_Red + Nickname + ", Sorry you are not our member!!!")
+    print(Bright_Red + Nickname + "\n\
+              *\n\
+            * U *\n\
+        *   Just    *\n\
+    *   Got Hacked!!   *\n\
+*****************************\n\
+*****************************\n\
+Sorry you are not our Member!\n\
+*****************************\n\
+*****************************")
    

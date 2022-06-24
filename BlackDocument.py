@@ -43,6 +43,7 @@ Membership = "RekcahHC_"
 Telegram = "T.me/RekcahHC_"
 Secret = "BDU"
 Secret_Chat = "X7ksLyChat-"
+PM_Active = False
 
 #Main Page Functions
 def Password_Error():
@@ -262,7 +263,7 @@ def Run():
         elif Answer == DemonFireWall[1]:
             #VPN Files Script
             VPN_Files()    
-            Logout_System()
+            Home()
             break
         #End Part
 
@@ -275,21 +276,21 @@ def Run():
         elif Answer == DemonFireWall[3]:
             #DarkWeb Links Script
             Darkweb_Links()
-            Logout_System()
+            Home()
             break
         #End Part
 
         elif Answer == DemonFireWall[4]:
             #Membership Script
             Memberships()
-            Logout_System()
+            Home()
             break
         #End Part
 
         elif Answer == DemonFireWall[5]:
             #Apps Script
             Apps()
-            Logout_System()
+            Home()
             break
         #End Part
 
@@ -335,7 +336,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Membership_Details()
-                Logout_System()
+                Home()
                 break
                 #End Part..................................................
             
@@ -344,7 +345,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Org_Rules()
-                Logout_System()
+                Home()
                 break
 
                 #End Line Of Rules..............................................................        
@@ -353,7 +354,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 About_Us()
-                Logout_System()
+                Home()
                 break
 
             elif More_MenuQ == DemonFireWall[12]:
@@ -361,7 +362,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Members_List()
-                Logout_System()
+                Home()
                 break
 
             elif More_MenuQ == DemonFireWall[13]:
@@ -369,7 +370,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Script_Games()
-                Logout_System()
+                Home()
                 break
             
             elif More_MenuQ == DemonFireWall[14]:
@@ -377,7 +378,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Org_History()
-                Logout_System()
+                Home()
                 break
 
             elif More_MenuQ == DemonFireWall[15]:
@@ -385,7 +386,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 Chat_Info()
-                Logout_System()
+                Home()
                 break
 
             elif More_MenuQ == DemonFireWall[16]:
@@ -393,7 +394,7 @@ def Run():
                 clearConsole()
                 NoLoad_Banner()
                 
-                Logout_System()
+                Home()
                 break
             else:
                 Menu_Error()
@@ -413,63 +414,69 @@ def Home():
 
 def Firewall_CodeBase_Scanner():
     while True:
+        global PM_Active
         if Nickname != Firewall_CodeBase[0]:
-            Broken_User()
             if Nickname != Firewall_CodeBase[1]:
-                Broken_User() 
                 if Nickname != Firewall_CodeBase[2]:
-                    Broken_User()
                     if Nickname != Firewall_CodeBase[3]:
-                        Broken_User()
                         if Nickname != Firewall_CodeBase[4]:
-                            Broken_User()
                             if Nickname != Firewall_CodeBase[5]:
-                                Broken_User()
                                 if Nickname != Firewall_CodeBase[6]:
-                                    Broken_User()
                                     if Nickname != Firewall_CodeBase[7]:
-                                        Broken_User()
                                         if Nickname != Firewall_CodeBase[8]:
-                                            Broken_User()
                                             if Nickname != Firewall_CodeBase[9]:
-                                                Broken_User()
                                                 if Nickname != Firewall_CodeBase[10]:
-                                                    Broken_User()
                                                     if Nickname != Firewall_CodeBase[11]:
-                                                        Broken_User()
                                                         if Nickname != Firewall_CodeBase[12]:
-                                                            Broken_User()
                                                             if Nickname != Firewall_CodeBase[13]:
-                                                                Broken_User()
-                                                                break
+                                                                if Nickname != Firewall_CodeBase[14]:
+                                                                    Broken_User()
+                                                                    break
 
+                                                                else:
+                                                                    PM_Active = True
+                                                                    Run()
                                                             else:
+                                                                PM_Active = True
                                                                 Run()
                                                         else:
+                                                            PM_Active = True
                                                             Run()
                                                     else:
+                                                        PM_Active = True
                                                         Run()
                                                 else:
+                                                    PM_Active = True
                                                     Run()
                                             else:
+                                                PM_Active = True
                                                 Run()
                                         else:
+                                            PM_Active = True
                                             Run() 
                                     else:
+                                        PM_Active = True
                                         Run() 
                                 else:
+                                    PM_Active = True
                                     Run() 
                             else:
+                                PM_Active = True
                                 Run() 
                         else:
+                            PM_Active = True
                             Run() 
                     else:
+                        PM_Active = True
                         Run() 
                 else:
+                    PM_Active = True
                     Run()
             else:
+                PM_Active = True
                 Run() 
         else:
+            PM_Active = True
             Run()
 
 def Login_Detector():
@@ -605,15 +612,20 @@ while True:
     Index_Welcome_msg2()
     Answer = input(Bright_Red + "Are you registered? <(Y/N)> " + Bright_Green)
     if Answer == Binary_Firewall[0]:
-        print(Bright_Red + "Please Contact Us;\n\
+        Nickname = input(Bright_Cyan + "Nickname: " + Bright_Green)
+        if len(Nickname) >= 1:
+            print(Bright_Cyan + Nickname + Bright_Red + " Please Contact Us;\n\
 At https://facebook.com/chhorg or try\n\
 At Https://t.me/cryptichatshackers Now...\n\
 Know Register and get the Organization\n\
 Password...\n\
-    \n\
+        \n\
 You Can't Register here in this version!")
-        Logout_System2()
-        break
+            Logout_System2()
+            break
+        else:
+            Nickname_Error2()
+            continue
     elif Answer == Binary_Firewall[1]:
         Membership_Scanner = "If you are a member of the Org\n\
 Please Enter The Firewall Security\n\

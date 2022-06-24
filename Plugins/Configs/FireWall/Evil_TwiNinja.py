@@ -71,4 +71,5 @@ Firewall_CodeBase = [
 'Wizard',
 'Krypto Hacker',
 'Krypto Hackt',
+'Demonichacker',
 ]

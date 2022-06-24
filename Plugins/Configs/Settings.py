@@ -234,7 +234,7 @@ Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/\n\
 Short_Empty = "/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/-/-\-\-/"
 
 x = 0
-
+PM_Active = False
 #Functions
 def clearConsole():
     Refresh = 'clear'   
@@ -732,30 +732,37 @@ def More_Menu():
     print("")
 
 def Chat_App():
-    Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
-    if Answer !="N":
-        Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
-        if Answer == "L": 
-            Linux = "cd Plugins && cd Configs && bash CDir_Config.sh "
-            os.system(Linux)
-        elif Answer == "W":
-            Windows = "cd Plugins && cd RekcahDA_Bot && python Chat.py"
-            os.system(Windows)
+    global PM_Active
+    if PM_Active == True:
+        Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
+        if Answer !="N":
+            Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
+            if Answer == "L": 
+                Linux = "cd Plugins && cd Configs && bash CDir_Config.sh "
+                os.system(Linux)
+            elif Answer == "W":
+                Windows = "cd Plugins && cd RekcahDA_Bot && python Chat.py"
+                os.system(Windows)
+            else:
+                print("")
+                Auto_Text_129 = "RekcahDA_Bot: Please Use L or W As Your Answer"
+                for char in Auto_Text_129:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                print("")
+                print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
+                for char in TO_msg:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.3)
         else:
-            print("")
-            Auto_Text_129 = "RekcahDA_Bot: Please Use L or W As Your Answer"
-            for char in Auto_Text_129:
-                sys.stdout.write(char)
-                sys.stdout.flush()
-                time.sleep(0.1)
-            print("")
-            print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
-            for char in TO_msg:
-                sys.stdout.write(char)
-                sys.stdout.flush()
-                time.sleep(0.3)
+            print(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red +"Thank You For Your Time.")
     else:
-        print(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red +"Thank You For Your Time.")
+        print(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red +"Only Preminum Members Allowed\n\
+To Open Chat...\n\
+\n\
+Please Register First!!!")
 
 def Logout_System():
     #Logout Config
@@ -853,24 +860,12 @@ def Logout_System2():
 
             elif Moretime == Binary_Firewall[1]:
                 print(Rest +""+ Bright_Red +"The End...")
-                print("")
-                print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
-                for char in TO_msg:
-                    sys.stdout.write(char)
-                    sys.stdout.flush()
-                    time.sleep(0.1)
                 break
         elif Logout == "Chat":
             Chat_App()
             break
         else:
             print(Rest +""+ Bright_Red +"The End...")
-            print("")
-            print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
-            for char in TO_msg:
-                sys.stdout.write(char)
-                sys.stdout.flush()
-                time.sleep(0.1)
             break
 
 def Loading_Prograss():

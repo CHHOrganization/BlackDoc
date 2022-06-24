@@ -5,21 +5,7 @@ def Updates_Page():
     print(Dark_Blue + BG_Dark_Green + Line + Rest)
     clearConsole()
     Index_Banner()
-    for char in Banner_msg:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.0)
-    print(Dark_Blue + BG_Dark_Green + "")
-    for char in Line:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.500)
-    print(Rest + Bright_Green + BG_Dark_Blue)
-    for char in Endl:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(0.0)
-    print(Rest +"")
+    
 
     print(Bright_Yellow) 
     Auto_Text_15 = "Updates"
@@ -47,9 +33,11 @@ def Updates_Page():
     print("")
 
     print(Bright_Green +"The Org is finally in it's own level of\n\
-trust with it's members to share and make use of this script. This Script")
+trust with it's members to share and make\n\
+use of this script. This Script")
     print("Containing The Org data as our members\n\
-agreed to share their public cryptic info throw the BlackDoc")
+agreed to share their public cryptic info\n\
+throw the BlackDoc")
     print(Bright_Red +"Please Note; All information in this\n\
 document is classified to unmembers of\n\
 The Org")

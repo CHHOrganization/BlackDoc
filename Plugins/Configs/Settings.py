@@ -815,6 +815,64 @@ def Logout_System():
                 time.sleep(0.1)
             break
 
+def Logout_System2():
+    #Logout Config
+    while True:
+        print(Bright_Red + "")
+        for char in Logout_msg:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.3)
+        print("")
+        Logout = input(BG_Bright_Red + Bright_Yellow +"Logout? <(Y/N)> "+ Rest + Bright_Green)
+        if Logout == Binary_Firewall[0]:
+            print(Rest + Bright_Green + "")
+            for char in MT_msg:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+
+            print("" + Bright_Yellow + BG_Dark_Cyan)
+            for char in Empty:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.5)
+            print(""+ Rest)
+
+            Moretime = input(BG_Bright_Red + Bright_Yellow +"Are You Done Yet? <(Y/N)> " + Rest + Bright_Green)
+            print(Rest + Bright_Red + "")
+            if Moretime == Binary_Firewall[0]:
+                for char in MT_msg2:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                break
+
+            elif Moretime == DemonFireWall[7]:
+                Chat_App()
+
+            elif Moretime == Binary_Firewall[1]:
+                print(Rest +""+ Bright_Red +"The End...")
+                print("")
+                print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
+                for char in TO_msg:
+                    sys.stdout.write(char)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                break
+        elif Logout == "Chat":
+            Chat_App()
+            break
+        else:
+            print(Rest +""+ Bright_Red +"The End...")
+            print("")
+            print(BG_Dark_Magenta + Bright_Yellow + Exit_msg + Rest + Bright_Red)
+            for char in TO_msg:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            break
+
 def Loading_Prograss():
     print(Bright_Yellow + BG_Dark_Cyan)
     for char in Empty:
@@ -826,7 +884,7 @@ def Loading_Prograss():
 def Broken_User():
     clearConsole()
     NoLoad_Banner2()
-    Nickname = ""
+    global Nickname
     print(Bright_Red + Nickname + "\n\
               *\n\
             * U *\n\
@@ -835,6 +893,22 @@ def Broken_User():
 *****************************\n\
 *****************************\n\
 Sorry you are not our Member!\n\
+*****************************\n\
+*****************************")
+
+def Broken_User2():
+    clearConsole()
+    NoLoad_Banner2()
+    global Nickname
+    print(Bright_Red + Nickname + "\n\
+              *\n\
+            * U *\n\
+        *   Just    *\n\
+    *   Got Hacked!!   *\n\
+*****************************\n\
+*****************************\n\
+Sorry you are not our Member!\n\
+You Not Allowed To Open Chat!\n\
 *****************************\n\
 *****************************")
    

@@ -35,7 +35,6 @@ from Plugins.Configs.Pages.More_Menu_Pages.BlackDoc_Info import *
 #Dont Share This Script With Others.
 
 #All BlackDocument Stored Data -------- IF You May Change Something Here Your Program Wont Work Right.
-
 #Membership Data Storage
 Identity = ""
 Location = ""
@@ -216,6 +215,202 @@ def Membership_Details():
     print("DarkChat Code: "+ Secret_Chat + Identity + "-" + Location[0] + Password[3] + Location[4] + Identity[0] + Password[1] + Password[0])
     print("Unique Code: "+ Secret + Identity + "-" + Location[0] + Password[3] + Location[4] + Identity[0] + Password[1] + Password[0])
 
+#The Script Loop
+def Run():
+    while True:
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        clearConsole() 
+        Index_Banner()
+        Index_Welcome_msg()
+        Membership_Details()
+        Main_Menu()
+        Answer = input(Bright_Cyan +"Select: ")
+        if Answer == DemonFireWall[0]:
+            #Updates Script
+            Updates_Page()
+            Home()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[1]:
+            #VPN Files Script
+            VPN_Files()    
+            Logout_System()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[2]:
+            #Yaaic Config Script
+            Yaaic_Config()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[3]:
+            #DarkWeb Links Script
+            Darkweb_Links()
+            Logout_System()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[4]:
+            #Membership Script
+            Memberships()
+            Logout_System()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[5]:
+            #Apps Script
+            Apps()
+            Logout_System()
+            break
+        #End Part
+
+        elif Answer == DemonFireWall[6]:
+            #Hacking Lessons Script
+            Hacking_Lessons()
+            continue
+        #End Part
+        elif Answer == DemonFireWall[7]:
+            #Chatting Script
+            Chat_App()
+            break
+        #End Part    
+        
+        elif Answer == DemonFireWall[8]:
+            #More Menu
+            clearConsole() 
+            #Banner
+            NoLoad_Banner()
+            #Index Texts In Animated Format
+            print(Bright_Green)
+            for char in Header:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            print("")
+            for char in Main_msg:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            print("")
+            for char in Main_msg2:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            print("")
+            #Logged in User Details
+            Membership_Details()
+            More_Menu()
+            More_MenuQ = input(Bright_Cyan +"Select: ")
+            if More_MenuQ == DemonFireWall[9]:
+                #MyAccount Page
+                clearConsole()
+                NoLoad_Banner()
+                Membership_Details()
+                Logout_System()
+                break
+                #End Part..................................................
+            
+            elif More_MenuQ == DemonFireWall[10]:
+                #Organization Rules
+                clearConsole()
+                NoLoad_Banner()
+                Org_Rules()
+                Logout_System()
+                break
+
+                #End Line Of Rules..............................................................        
+            elif More_MenuQ == DemonFireWall[11]:
+                #About The Org
+                clearConsole()
+                NoLoad_Banner()
+                About_Us()
+                Logout_System()
+                break
+
+            elif More_MenuQ == DemonFireWall[12]:
+                #Members List Page
+                clearConsole()
+                NoLoad_Banner()
+                Members_List()
+                Logout_System()
+                break
+
+            elif More_MenuQ == DemonFireWall[13]:
+                #Script Games Page
+                clearConsole()
+                NoLoad_Banner()
+                Script_Games()
+                Logout_System()
+                break
+            
+            elif More_MenuQ == DemonFireWall[14]:
+                #Script Games Page
+                clearConsole()
+                NoLoad_Banner()
+                Org_History()
+                Logout_System()
+                break
+
+            elif More_MenuQ == DemonFireWall[15]:
+                #Script Games Page
+                clearConsole()
+                NoLoad_Banner()
+                Chat_Info()
+                Logout_System()
+                break
+
+            elif More_MenuQ == DemonFireWall[16]:
+                #Script Games Page
+                clearConsole()
+                NoLoad_Banner()
+                
+                Logout_System()
+                break
+            else:
+                Menu_Error()
+                continue
+        else:
+            Menu_Error()
+            continue
+
+def Home():
+    Home = input(BG_Bright_Red + Bright_Green + "Do you wanna go back? <(Y/N)>" + Rest + Bright_Green)
+    if Home == "N":
+        Logout_System()
+    elif Home == "Y":
+        Run()
+    else:
+        Options_Error2()
+
 def Firewall_CodeBase_Scanner():
     while True:
         if Nickname != Firewall_CodeBase[0]:
@@ -242,8 +437,16 @@ def Firewall_CodeBase_Scanner():
                                                     Broken_User()
                                                     if Nickname != Firewall_CodeBase[11]:
                                                         Broken_User()
-                                                        break
+                                                        if Nickname != Firewall_CodeBase[12]:
+                                                            Broken_User()
+                                                            if Nickname != Firewall_CodeBase[13]:
+                                                                Broken_User()
+                                                                break
 
+                                                            else:
+                                                                Run()
+                                                        else:
+                                                            Run()
                                                     else:
                                                         Run()
                                                 else:
@@ -268,6 +471,104 @@ def Firewall_CodeBase_Scanner():
                 Run() 
         else:
             Run()
+
+def Login_Detector():
+    while True:
+        global Identity
+        global Location 
+        global Password 
+        global Membership 
+        global Telegram 
+        global Secret 
+        global Secret_Chat   
+
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        print(Dark_Blue + BG_Dark_Green + Line + Rest)
+        clearConsole()
+        #Banner
+        Login_Banner()
+        #Login System & Instructions
+        Login_System()
+        Identity = input(Bright_Cyan +"iD: ")
+        if len(Identity) > 0:
+            Password = input("Password: ")
+            if len(Password) >= 8:    
+                Cpassword = input("Confirm Password: ")
+                if len(Cpassword) >= 8:
+                    if Password == Cpassword:
+                        Location = input("Location: ")
+                        if len(Location) > 1:
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
+                            Firewall_CodeBase_Scanner()
+                        else:
+                            Location_Error()
+                            continue
+                    else:
+                        CPassword_Error()
+                        continue
+                        #The End Of The Script!
+                else:
+                    CPassword_Error()
+                    continue
+            else:
+                Password_Error()
+                continue
+        else:
+            iD_Error()
+            continue                                   
 
 #Unlocked Version
 while True:
@@ -311,7 +612,7 @@ Know Register and get the Organization\n\
 Password...\n\
     \n\
 You Can't Register here in this version!")
-        Logout_System()
+        Logout_System2()
         break
     elif Answer == Binary_Firewall[1]:
         Membership_Scanner = "If you are a member of the Org\n\
@@ -321,6 +622,7 @@ Details;"
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(0.1)
+        print("")
         Nickname = input(Bright_Cyan + "Nickname: " + Bright_Green)
         if len(Nickname) >= 1:
             print(Dark_Blue + BG_Dark_Green + Line + Rest)
@@ -417,14 +719,14 @@ Secret Password for Preminum Members?\n\
                                         else:
                                             Invited_By = input(Bright_Cyan + Ms5 + "). " + Rest +  "Q5 Answer;\n\
 "+ Bright_Red)
-                                            if len(Invited_By) <=5:
+                                            if len(Invited_By) <=1:
                                                 Firewall_Error()
                                                 Logout_System()
                                                 break
                                             else:
                                                 Registered_Date = input(Bright_Cyan + Ms6 + "). " + Rest +  "Q6 Answer;\n\
 "+ Bright_Red)
-                                                if len(Registered_Date) <=3:
+                                                if len(Registered_Date) <=1:
                                                     Firewall_Error()
                                                     Logout_System()
                                                     break
@@ -438,285 +740,14 @@ Secret Password for Preminum Members?\n\
                                                     else:
                                                         if Paying_Member == "Y":
                                                             Paying_Member = "Yes"
+                                                            Login_Detector()
                                                         elif Paying_Member == "N":
                                                             Paying_Member = "No"
+                                                            Login_Detector()
                                                         else:
                                                             Options_Error2()
-                                                        #The Script Loop
-                                                        while True:
-                                                            def Run():
-                                                                while True:
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                    clearConsole() 
-                                                                    Index_Banner()
-                                                                    Index_Welcome_msg()
-                                                                    Membership_Details()
-                                                                    Main_Menu()
-                                                                    Answer = input(Bright_Cyan +"Select: ")
-                                                                    if Answer == DemonFireWall[0]:
-                                                                        #Updates Script
-                                                                        Updates_Page()
-                                                                        Logout_System()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[1]:
-                                                                        #VPN Files Script
-                                                                        VPN_Files()    
-                                                                        Logout_System()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[2]:
-                                                                        #Yaaic Config Script
-                                                                        Yaaic_Config()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[3]:
-                                                                        #DarkWeb Links Script
-                                                                        Darkweb_Links()
-                                                                        Logout_System()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[4]:
-                                                                        #Membership Script
-                                                                        Memberships()
-                                                                        Logout_System()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[5]:
-                                                                        #Apps Script
-                                                                        Apps()
-                                                                        Logout_System()
-                                                                        break
-                                                                    #End Part
-
-                                                                    elif Answer == DemonFireWall[6]:
-                                                                        #Hacking Lessons Script
-                                                                        Hacking_Lessons()
-                                                                        continue
-                                                                    #End Part
-                                                                    elif Answer == DemonFireWall[7]:
-                                                                        #Chatting Script
-                                                                        Chat_App()
-                                                                        break
-                                                                    #End Part    
-                                                                    
-                                                                    elif Answer == DemonFireWall[8]:
-                                                                        #More Menu
-                                                                        clearConsole() 
-                                                                        #Banner
-                                                                        NoLoad_Banner()
-                                                                        #Index Texts In Animated Format
-                                                                        print(Bright_Green)
-                                                                        for char in Header:
-                                                                            sys.stdout.write(char)
-                                                                            sys.stdout.flush()
-                                                                            time.sleep(0.1)
-                                                                        print("")
-                                                                        for char in Main_msg:
-                                                                            sys.stdout.write(char)
-                                                                            sys.stdout.flush()
-                                                                            time.sleep(0.1)
-                                                                        print("")
-                                                                        for char in Main_msg2:
-                                                                            sys.stdout.write(char)
-                                                                            sys.stdout.flush()
-                                                                            time.sleep(0.1)
-                                                                        print("")
-                                                                        #Logged in User Details
-                                                                        Membership_Details()
-                                                                        More_Menu()
-                                                                        More_MenuQ = input(Bright_Cyan +"Select: ")
-                                                                        if More_MenuQ == DemonFireWall[9]:
-                                                                            #MyAccount Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Membership_Details()
-                                                                            Logout_System()
-                                                                            break
-                                                                            #End Part..................................................
-                                                                        
-                                                                        elif More_MenuQ == DemonFireWall[10]:
-                                                                            #Organization Rules
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Org_Rules()
-                                                                            Logout_System()
-                                                                            break
-
-                                                                            #End Line Of Rules..............................................................        
-                                                                        elif More_MenuQ == DemonFireWall[11]:
-                                                                            #About The Org
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            About_Us()
-                                                                            Logout_System()
-                                                                            break
-
-                                                                        elif More_MenuQ == DemonFireWall[12]:
-                                                                            #Members List Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Members_List()
-                                                                            Logout_System()
-                                                                            break
-
-                                                                        elif More_MenuQ == DemonFireWall[13]:
-                                                                            #Script Games Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Script_Games()
-                                                                            Logout_System()
-                                                                            break
-                                                                        
-                                                                        elif More_MenuQ == DemonFireWall[14]:
-                                                                            #Script Games Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Org_History()
-                                                                            Logout_System()
-                                                                            break
-
-                                                                        elif More_MenuQ == DemonFireWall[15]:
-                                                                            #Script Games Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            Chat_Info()
-                                                                            Logout_System()
-                                                                            break
-
-                                                                        elif More_MenuQ == DemonFireWall[16]:
-                                                                            #Script Games Page
-                                                                            clearConsole()
-                                                                            NoLoad_Banner()
-                                                                            
-                                                                            Logout_System()
-                                                                            break
-                                                                        else:
-                                                                            Menu_Error()
-                                                                            continue
-                                                                    else:
-                                                                        Menu_Error()
-                                                                        continue
-                                                                        
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                            clearConsole()
-                                                            #Banner
-                                                            Login_Banner()
-                                                            #Login System & Instructions
-                                                            Login_System()
-                                                            Identity = input(Bright_Cyan +"iD: ")
-                                                            if len(Identity) > 0:
-                                                                Password = input("Password: ")
-                                                                if len(Password) >= 8:    
-                                                                    Cpassword = input("Confirm Password: ")
-                                                                    if len(Cpassword) >= 8:
-                                                                        if Password == Cpassword:
-                                                                            Location = input("Location: ")
-                                                                            if len(Location) > 1:
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                print(Dark_Blue + BG_Dark_Green + Line + Rest)
-                                                                                Firewall_CodeBase_Scanner()
-                                                                            else:
-                                                                                Location_Error()
-                                                                                continue
-                                                                        else:
-                                                                            CPassword_Error()
-                                                                            continue
-                                                                            #The End Of The Script!
-                                                                    else:
-                                                                        CPassword_Error()
-                                                                        continue
-                                                                else:
-                                                                    Password_Error()
-                                                                    continue
-                                                            else:
-                                                                iD_Error()
-                                                                continue                                                                                         
+                                                            break
+                                                                                                              
         else:
             Nickname_Error2()
             continue

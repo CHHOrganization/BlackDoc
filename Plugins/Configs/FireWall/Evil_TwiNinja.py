@@ -69,4 +69,6 @@ Firewall_CodeBase = [
 'RekcahHC_X',
 'RekcahHC_XI',
 'Wizard',
+'Krypto Hacker',
+'Krypto Hackt',
 ]

@@ -884,7 +884,7 @@ def Loading_Prograss():
 def Broken_User():
     clearConsole()
     NoLoad_Banner2()
-    global Nickname
+    Nickname = ""
     print(Bright_Red + Nickname + "\n\
               *\n\
             * U *\n\
@@ -899,7 +899,7 @@ Sorry you are not our Member!\n\
 def Broken_User2():
     clearConsole()
     NoLoad_Banner2()
-    global Nickname
+    Nickname = ""
     print(Bright_Red + Nickname + "\n\
               *\n\
             * U *\n\

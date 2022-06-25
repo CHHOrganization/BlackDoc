@@ -1,7 +1,7 @@
 import os, time, sys
 from Plugins.Configs.Settings import *
 
-def Chat_APP():
+def Chat_App():
     Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "Do you want to chat? <(Y/N)> ")
     if Answer != Binary_Firewall[0]:
         Answer = input(Bright_Magenta + "RekcahDA_Bot: "+ Bright_Red + "You Use Linux Or Windows? <(L/W)> ")
